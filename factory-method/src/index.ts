@@ -1,6 +1,7 @@
+import { BicycleTransport } from "./transport/BicycleTransport";
 import { CarTransport } from "./transport/CarTransport";
 import { MotorcycleTransport } from "./transport/MotorcycleTransport";
-import Transport from "./transport/transport";
+import Transport from "./transport/Transport";
 
 declare var process;
 
@@ -14,9 +15,13 @@ if (process.argv.includes("--uber")) {
 
     transport = new MotorcycleTransport();
 
+} else if (process.argv.includes("--eats")) {
+
+    transport = new BicycleTransport();
+
 } else {
 
-    console.log("Selecione o tipo de entrega.");
+    console.error("Selecione o tipo de entrega.");
     
 }
 

@@ -1,5 +1,5 @@
-import Transport from "./transport";
-import Car from "./vehicles/car";
+import Transport from "./Transport";
+import Car from "./vehicles/Car";
 import IVehicle from "./vehicles/interfaces/IVehicle";
 
 export class CarTransport extends Transport {

@@ -1,12 +1,13 @@
 import Transport from "./Transport";
 import Motorcycle from "./vehicles/Motorcycle";
 import IVehicle from "./vehicles/interfaces/IVehicle";
+import Bicycle from "./vehicles/Bicycle";
 
-export class MotorcycleTransport extends Transport {
+export class BicycleTransport extends Transport {
 
     protected createTransport(): IVehicle {
         
-        return new Motorcycle();
+        return new Bicycle();
 
     }
 

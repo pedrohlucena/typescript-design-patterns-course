@@ -5,15 +5,15 @@ export default class Airplane implements IAircraft {
     startRoute(): void {
         this.checkWind();
         this.getCargo();
-        console.log("Iniciando a decolagem...");
+        console.log("Iniciando a decolagem e trajeto...");
     }
 
     getCargo(): void {
-        console.log("Pegamos os passageiros, estamos prontos!");
+        console.log("Carga acoplada");
     }
 
     checkWind(): void {
-        console.log("Ventos as 25km, ventos ok!");
+        console.log("Sem ventos, ventos ok!");
     }
 
 }

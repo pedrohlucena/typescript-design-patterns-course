@@ -1,8 +1,8 @@
 import IAircraft from "../aerial/interfaces/IAircraft";
-import TransportFactory from "../factories/ITransportFactory";
+import TransportFactory from "../factories/interfaces/ITransportFactory";
 import LandVehicle from "../land/interfaces/ILandVehicle";
 
-export default class Application {
+export default class Client {
 
     private vehicle: LandVehicle;
     private aircraft: IAircraft;

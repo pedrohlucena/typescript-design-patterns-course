@@ -1,5 +1,5 @@
-import Aircraft from "../aerial/interfaces/IAircraft";
-import LandVehicle from "../land/interfaces/ILandVehicle";
+import Aircraft from "../../aerial/interfaces/IAircraft";
+import LandVehicle from "../../land/interfaces/ILandVehicle";
 
 export default interface ITransportFactory {
     

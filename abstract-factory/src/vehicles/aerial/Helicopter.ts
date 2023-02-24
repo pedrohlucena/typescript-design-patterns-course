@@ -3,7 +3,7 @@ import IAircraft from "./interfaces/IAircraft";
 export default class Helicopter implements IAircraft {
 
     startRoute(): void {
-        this.wind();
+        this.checkWind();
         this.getCargo();
         console.log("Iniciando a decolagem...");
     }
@@ -12,7 +12,7 @@ export default class Helicopter implements IAircraft {
         console.log("Passageiros ok. ligando hélices");
     }
 
-    wind(): void {
+    checkWind(): void {
         console.log("Ventos as 25km, Sudeste, ventos ok!");
     }
 

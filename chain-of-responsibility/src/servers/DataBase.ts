@@ -1,6 +1,8 @@
+import DataBaseItem from "./DataBaseItem";
 import PermissionType from "./PermissionType";
 
-const DataBase = [
+
+const DataBase: Array<DataBaseItem> = [
   {
     email: 'master@hcode.com.br',
     password: '123456',

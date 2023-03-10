@@ -27,11 +27,7 @@ function setPromptQuestions() {
     
     });
     
-    rl.on("close", () => {
-    
-        setPromptQuestions();
-    
-    });
+    rl.on("close", setPromptQuestions);
 
 }
 

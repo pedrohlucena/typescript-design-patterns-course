@@ -1,6 +1,7 @@
 import * as readline from "readline";
 import CheckPermissionMiddleware from "./middlewares/CheckPermissionMiddleware";
 import CheckUserMiddleware from "./middlewares/CheckUserMiddleware";
+import CheckWeakPasswordMiddleware from "./middlewares/CheckWeakPasswordMiddleware";
 import Middleware from "./middlewares/Middleware";
 import Server from "./servers/Server";
 
@@ -33,7 +34,9 @@ function setPromptQuestions() {
 
 const middleware: Middleware = new CheckUserMiddleware();
 
-middleware.linkWith(new CheckPermissionMiddleware());
+middleware
+    .linkWith(new CheckWeakPasswordMiddleware())
+    .linkWith(new CheckPermissionMiddleware());
 
 server.setMiddleware(middleware);
 

@@ -1,0 +1,6 @@
+{
+    "compileOptions": {
+        "target": "ESNEXT",
+        "strictPropertyInitialization": false,
+    }
+}

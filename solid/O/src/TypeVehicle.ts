@@ -1,6 +1,7 @@
 enum TypeVehicle {
     CAR,
-    MOTORCYCLE
+    MOTORCYCLE,
+    BICYCLE
 };
 
 export default TypeVehicle;
